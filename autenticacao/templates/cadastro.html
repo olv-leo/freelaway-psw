@@ -23,6 +23,14 @@
             <br>
             <input  type="submit" value="CADASTRAR" class="btn btn-success btn-lg">
             <a href="{% url 'login' %}" class="btn btn-primary btn-lg">LOGIN</a>
+            <br><br>
+            {% if messages %}
+                {% for message in messages %}
+                    <div class="alert {{message.tags}}">
+                        {{message}}
+                    </div>
+                {% endfor %}
+            {% endif %}
         </form>
     </div>
 {% endblock %}
