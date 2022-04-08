@@ -14,7 +14,7 @@
     <div class="row">
 
         <div class="col-sm">
-            <form action="{% url 'encontrar_jobs' %}" method="POST">
+            <form action="{% url 'encontrar_jobs' %}" method="GET">
                 <input type="text" class="form-control" placeholder="Preço mínimo" name="preco_minimo">
                 <br>
                 <input type="text" class="form-control" placeholder="Preço máximo" name="preco_maximo">
@@ -28,7 +28,8 @@
 
         <div class="col-sm">
             <select class="form-control" name="categoria">
-                <option value="D">Design</option>
+                <option value="">Tudo</option>
+                <option value='D'>Design</option>
                 <option value="EV">Edição de vídeo</option>
             </select>
             <br>
@@ -68,9 +69,9 @@
                             <p class="titulo-body">Categoria:</p>
                             <p>{% if job.categoria == 'D'%}
                                     Design
-                                {% else %}
+                                {% elif job.categoria == 'EV'%}
                                     Edição de vídeo
-                                {% endif%}
+                                {% endif %}
 
                             </p>
                         </div>
