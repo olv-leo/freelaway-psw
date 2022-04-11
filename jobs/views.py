@@ -1,9 +1,13 @@
 from datetime import datetime
-from django.shortcuts import render, redirect
+from django.shortcuts import render, redirect, HttpResponse
 from .models import Jobs, User
 from django.contrib import messages
 from django.contrib.messages import constants
 from django.contrib.auth.decorators import login_required
+
+
+def index(request):
+    return HttpResponse('Teste')
 
 @login_required(login_url='/auth/logar')
 def encontrar_jobs(request):
