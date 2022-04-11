@@ -26,7 +26,7 @@
 
   </head>
   <body class="fundo">
-  {% if user.is_authenticated %}
+  {% if user.is_authenticated and request.get_full_path != '/' %}
   <nav style="background-color: #444;" class="navbar navbar-expand-lg navbar-dark">
       <a class="navbar-brand" href="/"><span class="font-degrade-nav">FreelaWay</span></a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
