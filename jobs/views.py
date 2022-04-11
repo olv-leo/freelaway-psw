@@ -7,7 +7,7 @@ from django.contrib.auth.decorators import login_required
 
 
 def index(request):
-    return HttpResponse('Teste')
+    return render(request, 'index.html')
 
 @login_required(login_url='/auth/logar')
 def encontrar_jobs(request):

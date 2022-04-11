@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block 'title' %}Home{% endblock %}
+
+{% block 'head' %}
+<link rel="stylesheet" href="{% static 'jobs/css/index.css' %}">
+{% endblock %}
+{% block 'body' %}
+<h1 class="titulo">FreelaWay</h1>
+Conectando empresas e freelancers!
+
+<br><br>
+<button>Logar</button>
+<button>Registrar</button>
+<br><br>
+<button>Encontrar Jobs</button>
+{% endblock %}
