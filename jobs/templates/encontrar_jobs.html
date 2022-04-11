@@ -98,58 +98,40 @@
                     <div class="modal-body">
                         <div>
                             <h4 class="titulo-job">{{job.titulo}}</h4>
-
                             <h6 class="titulo-body">Descrição:</h6>
-
                             <p>{{job.descricao}}</p>
-
                             <div class="row">
-
                                 <div class="col-4">
-
                                     <h6 class="titulo-body">Preço:</h6>
-
                                     <p>{{job.preco}}</p>
-
                                 </div>
 
                                 <div class="col-4">
-
                                     <h6 class="titulo-body">Prazo:</h6>
-
                                     <p>{{job.prazo_entrega}}</p>
-
                                 </div>
 
                                 <div class="col-4">
-
                                     <h6 class="titulo-body">Categoria:</h6>
-
                                     <p>{{job.prazo_entrega}}</p>
-
                                 </div>
-
-
                             </div>
 
                             <h4 style="display:inline;" class="job-modal-titulo">Referencias:</h4>
                             <br>
                             <br>
                             <div class="row">
-
                                 {% for referencia in job.referencias.all %}
-                                <div class="col-4">
-                                    <img src="{{referencia}}" width="100%">
 
-
-                                </div>
+                                    <div class="col-4">
+                                        <img src="{{referencia}}" width="100%">
+                                    </div>
                                 {% endfor %}
-
 
                             </div>
                             <br>
                             <br>
-                            <a href="#" class="btn btn-success btn-lg">ACEITAR JOB</a>
+                            <a href="{% url 'aceitar_job' job.id %}" class="btn btn-success btn-lg">ACEITAR JOB</a>
                         </div>
                     </div>
                 </div>
