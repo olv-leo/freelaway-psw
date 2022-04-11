@@ -1,7 +1,7 @@
 {% extends 'base.html' %}
 {% load static %}
 
-
+{% block 'title' %}{{ user.username }}{% endblock %}
 {% block 'head' %}
 <link rel="stylesheet" href="{% static 'jobs/css/encontrar_jobs.css' %}">
 <link rel="stylesheet" href="{% static 'jobs/css/perfil.css' %}">
@@ -27,10 +27,10 @@
             <p>Email:</p>
             <input type="email" class="form-control" value="{{user.email}}" name="email">
             <br>
-            <p>Primeiro nome:</p>
+            <p>Nome:</p>
             <input type="text" class="form-control" value="{{user.first_name}}" name="primeiro_nome">
             <br>
-            <p>Último nome:</p>
+            <p>Sobrenome:</p>
             <input type="text" class="form-control" value="{{user.last_name}}" name="ultimo_nome">
             <br>
             <input type="submit" class="btn btn-success btn-lg" value="Salvar alterações">
