@@ -4,15 +4,22 @@
 
 1. Faça um fork do projeto
 2. Faça o clone do projeto
-3. Instale o pipenv (para criar um ambiente virtual para o projeto)
-4. Instale o pjango (Framework que é a base do projeto)
-5. Instale o pillow (Biblioteca para trabalhar com imagens)
-6. Instale o gunicorn
-7. Rode seu servidor
+3. Instale o pipenv (para gerenciar as dependências do projeto e criar um ambiente virtual)
+```console
+pip install pipenv
+```
+4. Crie seu ambiente virtual local e instale as dependências do projeto
+```console
+pipenv install
+```
+5. Rode seu servidor
+```console
+python manage.py runserver
+```
 
-**PS:** Se tiver dificuldade com algum passo da instalação recomendo o
-curso [PythonBirds](https://www.python.pro.br/modulos/python-birds/) do [Renzo](https://github.com/renzon)
-ele me ajudou muito com Python no geral, mas princípalmente com Github.
+**PS:** Se tiver dificuldade com algum passo da instalação recomendo o curso 
+[PythonBirds](https://www.python.pro.br/modulos/python-birds/) do [Renzo](https://github.com/renzon)
+ele me ajudou muito com os fundamentos de Python e Guthub.
 
 ## Descrição
 
