@@ -9,7 +9,7 @@ from django.contrib.auth.decorators import login_required
 def index(request):
     return render(request, 'index.html')
 
-@login_required(login_url='/auth/logar')
+@login_required(login_url='/auth/login')
 def encontrar_jobs(request):
     if request.method == "GET":
         preco_minimo = request.GET.get('preco_minimo')
@@ -49,7 +49,7 @@ def encontrar_jobs(request):
 
         return render(request, 'encontrar_jobs.html', {'jobs': jobs})
 
-@login_required(login_url='/auth/logar')
+@login_required(login_url='/auth/login')
 def aceitar_job(request, id):
     job = Jobs.objects.get(id=id)
     job.profissional = request.user
@@ -57,7 +57,7 @@ def aceitar_job(request, id):
     job.save()
     return redirect('/jobs/encontrar_jobs')
 
-@login_required(login_url='/auth/logar')
+@login_required(login_url='/auth/login')
 def perfil(request):
     if request.method == "GET":
         jobs = Jobs.objects.filter(profissional=request.user)
@@ -89,7 +89,7 @@ def perfil(request):
         messages.add_message(request, constants.SUCCESS, 'Dados alterado com sucesso')
         return redirect('/jobs/perfil')
 
-@login_required(login_url='/auth/logar')
+@login_required(login_url='/auth/login')
 def enviar_projeto(request):
     arquivo = request.FILES.get('file')
     id_job = request.POST.get('id')

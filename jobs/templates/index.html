@@ -12,11 +12,9 @@
             <h1 class='titulo'>FreelaWay</h1>
             <p class='subtitulo'>Conectando empresas e freelancers!</p>
 
-            <button class='btn btn-success'>Logar</button>
-            <button class='btn btn-primary'>Registrar</button>
-            <div class='encontrar-jobs'>
-                <button class='btn btn-dark'>Encontrar Jobs</button>
-            </div>
+            <a href="{% url 'login' %}" class='btn btn-success'>Logar</a>
+            <a href="{% url 'cadastro' %}" class='btn btn-primary'>Registrar</a>
+            <a href="{% url 'encontrar_jobs' %}" class='btn btn-dark'>Encontrar Jobs</a>
         </div>
     </div>
 {% endblock %}
