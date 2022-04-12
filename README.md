@@ -1,13 +1,24 @@
 # FreelaWay PSW
 
-Projeto utilizando Django e Pillow desenvolvido na PYSTACK WEEK 3.0 promovida pelo
-canal [Pythonado](https://www.youtube.com/c/pythonando) de 04 a 10 de abril de 2022.
+## Para instalar
+
+1. Faça um fork do projeto
+2. Faça o clone do projeto
+3. Instale o pipenv (para criar um ambiente virtual para o projeto)
+4. Instale o pjango (Framework que é a base do projeto)
+5. Instale o pillow (Biblioteca para trabalhar com imagens)
+6. Instale o gunicorn
+7. Rode seu servidor
+
+**PS:** Se tiver dificuldade com algum passo da instalação recomendo o
+curso [PythonBirds](https://www.python.pro.br/modulos/python-birds/) do [Renzo](https://github.com/renzon)
+ele me ajudou muito com Python no geral, mas princípalmente com Github.
 
 ## Descrição
 
 A idea da plataforma é conectar empresas que precisam de serviços de design ou edição de vídeo com Freelancers.
 
-A plataforma tem a seguinte página inicial: 
+A plataforma tem a seguinte página inicial:
 ![pagina_inicial.png](img-readme/pagina_inicial.png)
 
 Onde o usuário (freelancer) pode acessar sua conta, se registrar ou encontrar vagas.
@@ -64,13 +75,19 @@ email, então antes de fazer a mudança o sistema verifica essas informações
 
 Além disso, ainda na área de perfil, é possível que o usuário veja seu histório com todos os Jobs que já aceitou
 mostrando algumas informações gerais sobre os Jobs e também o status de cada um desses Jobs, podendo ser:
+
 - Em criação: Quando o usuário aceitou o Job, mas ainda não finalizou.
 - Aguardando aprovação: Quando o usuário já enviou o Job, mas ele ainda não foi analisado.
 - Finalizado: Quando o Job enviou o Job e ele foi aprovado pela empresa (que faz isso na área administrativa)
 
 ## Próximos passos:
+
 - Criar uma tela inicial para o site
 - Modificar a área de perfil e colocar a área de alteração de dados separadas
 - Adicionar a opção de mudança de senha para os usuários
 - Adicionar o link para o perfil na barra de navegação do site
 
+# Base do projeto
+
+Projeto utilizando Django e Pillow desenvolvido com base no projeto proposto na PYSTACK WEEK 3.0 promovida pelo
+canal [Pythonado](https://www.youtube.com/c/pythonando) de 04 a 10 de abril de 2022.
