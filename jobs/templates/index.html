@@ -4,15 +4,19 @@
 {% block 'title' %}Home{% endblock %}
 
 {% block 'head' %}
-<link rel="stylesheet" href="{% static 'jobs/css/index.css' %}">
+    <link rel='stylesheet' href="{% static 'jobs/css/index.css' %}">
 {% endblock %}
 {% block 'body' %}
-<h1 class="titulo">FreelaWay</h1>
-Conectando empresas e freelancers!
+    <div class='fundoinicial'>
+        <div class='container'>
+            <h1 class='titulo'>FreelaWay</h1>
+            <p class='subtitulo'>Conectando empresas e freelancers!</p>
 
-<br><br>
-<button>Logar</button>
-<button>Registrar</button>
-<br><br>
-<button>Encontrar Jobs</button>
+            <button class='btn btn-success'>Logar</button>
+            <button class='btn btn-primary'>Registrar</button>
+            <div class='encontrar-jobs'>
+                <button class='btn btn-dark'>Encontrar Jobs</button>
+            </div>
+        </div>
+    </div>
 {% endblock %}

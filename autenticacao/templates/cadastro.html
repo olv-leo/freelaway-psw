@@ -21,8 +21,8 @@
             <span class="span-descricao">Confirmar senha:</span>
             <input type="password" class="form-control input-cadastro" name="confirm-password">
             <br>
-            <input  type="submit" value="CADASTRAR" class="btn btn-success btn-lg">
-            <a href="{% url 'login' %}" class="btn btn-primary btn-lg">LOGIN</a>
+            <input  type="submit" value="CADASTRAR" class="btn btn-primary btn-lg">
+            <a href="{% url 'login' %}" class="btn btn-success btn-lg">LOGIN</a>
             <br><br>
             {% if messages %}
                 {% for message in messages %}
