@@ -56,7 +56,7 @@ def login(request):
             return redirect('/auth/login')
         else:
             auth.login(request, usuario)
-            return redirect('/plataforma')
+            return redirect('/')
     return HttpResponse('Login')
 
 def sair(request):
