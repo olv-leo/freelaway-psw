@@ -7,9 +7,14 @@ canal [Pythonado](https://www.youtube.com/c/pythonando) de 04 a 10 de abril de 2
 
 A idea da plataforma é conectar empresas que precisam de serviços de design ou edição de vídeo com Freelancers.
 
+A plataforma tem a seguinte página inicial: 
+![pagina_inicial.png](img-readme/pagina_inicial.png)
+
+Onde o usuário (freelancer) pode acessar sua conta, se registrar ou encontrar vagas.
+
 A empresa cadastra o serviço(Job) que precisa na área administrativa do site que pode ser acessada em:
 
-[endereco do site]/admin
+```localhost/admin```
 
 Cada Job tem as seguintes informações:
 
@@ -26,7 +31,7 @@ Cada Job tem as seguintes informações:
 Quando um Job é cadastrado ele vai para a área de Jobs, onde os freelancers cadastrados na plataforma podem ver todos os
 jobs, é possível acessar essa área através do link:
 
-[endereco do site]/jobs/encontrar_jobs
+```localhost/jobs/encontrar_jobs```
 
 ![encontrar_jobs.png](img-readme/encontrar_jobs.png)
 
@@ -43,7 +48,7 @@ também aceitar o Job clicando no botão "ACEITAR JOB":
 
 Uma vez aceito o Job vai para o perfil do usuário, que pode ser acessado no link:
 
-[endereco do site]/jobs/perfil
+```localhost/jobs/perfil```
 
 ![exemplo_perfil.png](img-readme/exemplo_perfil.png)
 
