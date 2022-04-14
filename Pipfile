@@ -8,7 +8,7 @@ pillow = "*"
 gunicorn = "*"
 python-decouple = "*"
 flake8 = "*"
-django = "==3.2.13"
+django = "*"
 
 [dev-packages]
 
