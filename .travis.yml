@@ -1,0 +1,7 @@
+language: python
+version: 3.9
+instal:
+  - pip install pipenv
+  - pipenv install
+script:
+  - flake8

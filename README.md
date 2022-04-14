@@ -1,5 +1,9 @@
 # FreelaWay PSW
 
+Plataforma para conectar emrpesas que precisam de serviços de Edição de Vídeo e/ou Design com Freelancers. 
+
+[![Build Status](https://app.travis-ci.com/olv-leo/freelaway-psw.svg?branch=master)](https://app.travis-ci.com/olv-leo/freelaway-psw)
+
 ## Para instalar
 
 1. Faça um fork do projeto

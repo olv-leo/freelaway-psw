@@ -1,5 +1,5 @@
 from datetime import datetime
-from django.shortcuts import render, redirect, HttpResponse
+from django.shortcuts import render, redirect
 from .models import Jobs, User
 from django.contrib import messages
 from django.contrib.messages import constants
@@ -8,6 +8,7 @@ from django.contrib.auth.decorators import login_required
 
 def index(request):
     return render(request, 'index.html')
+
 
 @login_required(login_url='/auth/login')
 def encontrar_jobs(request):
@@ -49,6 +50,7 @@ def encontrar_jobs(request):
 
         return render(request, 'encontrar_jobs.html', {'jobs': jobs})
 
+
 @login_required(login_url='/auth/login')
 def aceitar_job(request, id):
     job = Jobs.objects.get(id=id)
@@ -56,6 +58,7 @@ def aceitar_job(request, id):
     job.reservado = True
     job.save()
     return redirect('/jobs/encontrar_jobs')
+
 
 @login_required(login_url='/auth/login')
 def perfil(request):
@@ -89,6 +92,7 @@ def perfil(request):
         messages.add_message(request, constants.SUCCESS, 'Dados alterado com sucesso')
         return redirect('/jobs/perfil')
 
+
 @login_required(login_url='/auth/login')
 def enviar_projeto(request):
     arquivo = request.FILES.get('file')
@@ -100,6 +104,3 @@ def enviar_projeto(request):
     job.status = 'AA'
     job.save()
     return redirect('/jobs/perfil')
-
-
-

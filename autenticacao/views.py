@@ -5,6 +5,7 @@ from django.contrib import messages
 from django.contrib.messages import constants
 from django.contrib import auth
 
+
 def cadastro(request):
     if request.method == 'GET':
         if request.user.is_authenticated:
@@ -29,14 +30,10 @@ def cadastro(request):
             messages.add_message(request, constants.ERROR, 'Usuário já cadastrado.')
             return redirect('/auth/cadastro')
 
-        try:
-            user = User.objects.create_user(username=username, password=password)
-            user.save()
-            messages.add_message(request, constants.SUCCESS, 'Usuário salvo com sucesso!')
-            return redirect('/auth/login')
-        except:
-            messages.add_message(request, constants.ERROR, 'Falha ao salver o usuário.')
-            return redirect('/auth/cadastro')
+        user = User.objects.create_user(username=username, password=password)
+        user.save()
+        messages.add_message(request, constants.SUCCESS, 'Usuário salvo com sucesso!')
+        return redirect('/auth/login')
 
 
 def login(request):
@@ -58,6 +55,7 @@ def login(request):
             auth.login(request, usuario)
             return redirect('/')
     return HttpResponse('Login')
+
 
 def sair(request):
     auth.logout(request)
