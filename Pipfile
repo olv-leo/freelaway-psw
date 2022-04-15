@@ -8,7 +8,8 @@ pillow = "*"
 gunicorn = "*"
 python-decouple = "*"
 flake8 = "*"
-django = "*"
+django-s3-folder-storage = "*"
+django = "==3.2.13"
 
 [dev-packages]
 

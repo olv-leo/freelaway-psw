@@ -1,2 +1,7 @@
 DEBUG=True
 SECRET_KEY = Insira sua chave secreta
+
+# Configurações do AWS
+AWS_ACCESS_KEY_ID=
+AWS_SECRET_ACCESS_KEY=Ib0TDQ/
+AWS_STORAGE_BUCKET_NAME=
