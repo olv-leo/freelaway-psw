@@ -1,6 +1,8 @@
 # FreelaWay PSW
 
-Plataforma para conectar emrpesas que precisam de serviços de Edição de Vídeo e/ou Design com Freelancers. 
+Plataforma para conectar empresas que precisam de serviços de Edição de Vídeo e/ou Design com Freelancers. 
+
+Aplicação disponível em: https://freelaway.herokuapp.com
 
 [![Build Status](https://app.travis-ci.com/olv-leo/freelaway-psw.svg?branch=master)](https://app.travis-ci.com/olv-leo/freelaway-psw)
 
