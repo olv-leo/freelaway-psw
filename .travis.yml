@@ -1,6 +1,4 @@
 language: python
-version:
-  - 3.9
 
 env:
   global:
