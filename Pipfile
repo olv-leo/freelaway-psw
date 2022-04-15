@@ -9,7 +9,7 @@ gunicorn = "*"
 python-decouple = "*"
 flake8 = "*"
 django-s3-folder-storage = "*"
-django = "==3.2.13"
+django = "*"
 
 [dev-packages]
 
