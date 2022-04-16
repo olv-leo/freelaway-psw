@@ -10,6 +10,7 @@ flake8 = "*"
 django-s3-folder-storage = "*"
 django = "==3.2.13"
 pillow = "==8.4.0"
+collectfast = "*"
 
 [dev-packages]
 
