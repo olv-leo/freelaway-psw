@@ -1,6 +1,6 @@
 language: python
-version:
-  - 3.9
+python:
+  - "3.9"
 
 instal:
   - pip install pipenv

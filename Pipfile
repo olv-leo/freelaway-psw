@@ -8,11 +8,11 @@ gunicorn = "*"
 python-decouple = "*"
 flake8 = "*"
 django-s3-folder-storage = "*"
-django = "==3.2.13"
-pillow = "==8.4.0"
+django = "*"
+pillow = "*"
 collectfast = "*"
 
 [dev-packages]
 
 [requires]
-python_version = "3.7"
+python_version = "3.9"
